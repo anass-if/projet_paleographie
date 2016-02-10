@@ -1,0 +1,124 @@
+/* © Jérome Réaux : http://j-reaux.developpez.com - http://www.jerome-reaux-creations.fr */
+
+/* --------------------------- */
+/* CSS : MODULE DE NEWS        */
+/* --------------------------- */
+#containerListing				{ clear:both; overflow:hidden; margin:5px auto; }
+
+/* --------------------------- */
+/* LISTING des News            */
+/* --------------------------- */
+/* Affichage en COLONNES : Définir ICI le Nombre de colonnes pour l'Affichage en Listing */
+.newsListe 						{ clear:both; float:none; width:98%; overflow:hidden; border:2px solid #ccc; margin:auto; background-color:#FFFFFF; }
+.newsListeColonne 				{ clear:both; float:none; width:98%; min-height:150px; }	/* defaut */
+.newsListeColonne1 				{ clear:both; float:none; width:98%; min-height:150px; }	/* 1 colonne */
+.newsListeColonne2 				{ clear:none; float:left; width:49%; min-height:240px; }	/* 2 colonnes */
+.newsListeColonne3				{ clear:none; float:left; width:32%; min-height:280px; }	/* 3 colonnes */
+.newsListeColonne4 				{ clear:none; float:left; width:24%; min-height:360px; }	/* 4 colonnes */
+.newsListeColonne5 				{ clear:none; float:left; width:19%; min-height:420px; }	/* 5 colonnes */
+.newsListeColonne6 				{ clear:none; float:left; width:16%; min-height:560px; }	/* 6 colonnes */
+
+.newsListeEntete 				{ background:#E1F0FF; overflow:hidden; }
+h4.newsListeTitre 				{ padding:5px; float:left; font-size:1.1em; text-align:left; color:#3B4E77; font-weight:Bold; border:0; background:transparent; }
+.newsListeDate 					{ padding:8px 5px 5px 5px; float:right; text-align:right; }
+.newsListe h4					{ clear:none; }
+.newsListe p						{ clear:none; border:0; background:transparent; }
+.newsListe p:hover				{ border:0; background:transparent; }
+.newsListeContenu 				{ position:relative; overflow:hidden; padding:15px; text-align:left; }
+
+	.newsListeContenu h1 		{ font-size:1.9em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h2 		{ font-size:1.7em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h3 		{ font-size:1.5em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h4 		{ font-size:1.3em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h5 		{ font-size:1.1em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h6 		{ font-size:1.0em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsListeContenu h4 		{ clear:none; border:0; background:transparent; } /* admin */
+	.newsListeContenu img 		{ border:0; margin:5px; text-decoration:none; }
+	.newsListeContenu p 			{ clear:none; margin:5px auto; }
+	.newsListeContenu ul 			{ clear:none; margin-left:10px; list-style-position:inside; }
+	.newsListeContenu ul li 		{ margin:3px auto; list-style-position:inside; }
+	.newsListeContenu a 			{ text-decoration:none; }
+	.newsListeContenu a:hover 	{ text-decoration:underline; }
+/* Photo a gauche du texte */
+img.newsListePhoto 				{ float:left; margin:5px 15px 5px 5px; }
+
+/* Fichier Joint */
+.newsListeFile					{ float:right; display:inline-block; margin:10px 5px; padding:2px 5px; border:1px solid #ccc; font-weight:bold; color:#21409A; 
+								background:#E4FFE1;/*vert*/ 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+.newsListeFile:hover			{ background:#B7FFAE;/*vert moyen*/ text-decoration:none; }	
+.newsListeFile span				{ display:inline-block; height:22px; background:url('../../../template/img/icones/PDF.png') 0px 0px no-repeat; padding:4px 2px 0px 30px; }
+
+/* Lien Lire la Suite */
+.newsSuite						{ float:right; display:inline-block; margin:10px 5px; padding:2px 5px; border:1px solid #ccc; font-weight:bold; color:#21409A; 
+								background:#E4FFE1;/*vert*/ 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+.newsSuite:hover				{ background:#B7FFAE;/*vert moyen*/ text-decoration:none; }	
+.newsSuite span					{ display:inline-block; height:22px; background:url('../../../template/img/icones/VoirFiche.png') 0px 0px no-repeat; padding:4px 2px 0px 30px; }
+
+/* Fiche : Lien Retour */
+#LienRetourAccueil, 
+#LienRetourListe				{ display:inline-block; margin:5px auto; padding:2px 5px; border:1px solid #ccc; font-weight:bold; color:#21409A; 
+								background:#E4FFE1;/*vert*/ 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+#LienRetourAccueil:hover, 
+#LienRetourListe:hover			{ background:#B7FFAE;/*vert moyen*/ text-decoration:none; }	
+#LienRetourAccueil span, 
+#LienRetourListe span			{ display:inline-block; height:22px; background:url('../../../template/img/icones/Retour.png') 0px 0px no-repeat; padding:4px 2px 0px 30px; }
+
+/* --------------------------- */
+/* FICHE de la News            */
+/* --------------------------- */
+.newsFiche 						{ clear:both; width:98%; overflow:hidden; border:2px solid #ccc; margin:auto; background-color:#FFFFFF; }
+.newsFicheEntete 				{ background:#E1F0FF; overflow:hidden; }
+h4.newsFicheTitre 				{ padding:5px; float:left; font-size:1.1em; text-align:left; color:#3B4E77; font-weight:Bold; border:0; background:transparent; }
+.newsFicheDate 					{ padding:8px 5px 5px 5px; float:right; text-align:right; }
+.newsFiche h4					{ clear:none; }
+.newsFiche p						{ clear:none; border:0; background:transparent; }
+.newsFiche p:hover				{ border:0; background:transparent; }
+.newsFicheContenu 				{ position:relative; overflow:hidden; padding:15px; text-align:left; }
+
+	.newsFicheContenu h1 		{ font-size:1.9em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h2 		{ font-size:1.7em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h3 		{ font-size:1.5em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h4 		{ font-size:1.3em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h5 		{ font-size:1.1em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h6 		{ font-size:1.0em; color:#21409A; margin:5px; text-align:left; letter-spacing:0em; font-weight:normal; text-transform:uppercase; }
+	.newsFicheContenu h4 		{ clear:none; border:0; background:transparent; } /* admin */
+	.newsFicheContenu img 		{ border:0; margin:5px; text-decoration:none; }
+	.newsFicheContenu p 			{ clear:none; margin:5px auto; }
+	.newsFicheContenu ul 			{ clear:none; margin-left:10px; list-style-position:inside; }
+	.newsFicheContenu ul li 		{ margin:3px auto; list-style-position:inside; }
+	.newsFicheContenu a 			{ text-decoration:none; }
+	.newsFicheContenu a:hover 	{ text-decoration:underline; }
+/* Photo a gauche du texte */
+img.newsFichePhoto 				{ float:left; margin:5px 15px 5px 5px; }
+
+/* Fichier Joint */
+.newsFicheFile					{ float:right; display:inline-block; margin:10px 5px; padding:2px 5px; border:1px solid #ccc; font-weight:bold; color:#21409A; 
+								background:#E4FFE1;/*vert*/ 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+.newsFicheFile:hover			{ background:#B7FFAE;/*vert moyen*/ text-decoration:none; }	
+.newsFicheFile span				{ display:inline-block; height:22px; background:url('../../../template/img/icones/PDF.png') 0px 0px no-repeat; padding:4px 2px 0px 30px; }
+
+/* --------------------------- */
+/* PAGINATION */
+.newsPagination					{ clear:both; display:inline-block; margin:15px auto; padding:3px 10px; 
+								border:1px solid #ccc; 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+.newsPagination a, .newsPagination b	
+								{ display:inline-block; padding:2px 5px; 
+								color:#21409A; border:1px solid #ccc; background:#E4FFE1;/*vert*/ 
+								border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; 
+								}
+.newsPagination a:hover, .newsPagination b:hover	
+								{ background:#B7FFAE;/*vert moyen*/ text-decoration:none; font-weight:bold; }	
+
+/* --------------------------- */
+
+
